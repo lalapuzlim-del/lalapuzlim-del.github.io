@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бродач — барбершоп у Львові</title>
+<meta name="description" content="Барбершоп «Бродач» у Львові: чоловічі стрижки, борода, королівське гоління. Запис онлайн за хвилину.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://lalapuzlim-del.github.io/brodach.html">
+<meta property="og:title" content="Бродач — барбершоп у Львові">
+<meta property="og:description" content="Стрижки, борода, гоління. Запис онлайн за хвилину.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:url" content="https://lalapuzlim-del.github.io/brodach.html">
+<meta property="og:image" content="https://lalapuzlim-del.github.io/brodach-hero.jpg">
+<meta name="theme-color" content="#0F0E0D">
+<link rel="icon" href="brodach-favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brodach.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"Бродач","telephone":"+380000000000","url":"https://lalapuzlim-del.github.io/brodach.html","priceRange":"₴₴","address":{"@type":"PostalAddress","streetAddress":"вул. Прикладна, 1","addressLocality":"Львів","addressCountry":"UA"},"openingHours":["Mo-Sa 10:00-21:00","Su 11:00-19:00"]}
+</script>
+</head>
+<body>
+<header class="top" id="header">
+  <a class="logo" href="#top" aria-label="Бродач — на початок">Бродач</a>
+  <nav id="nav" aria-label="Основна навігація">
+    <a href="#services">Послуги</a>
+    <a href="#masters">Майстри</a>
+    <a href="#work">Галерея</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+  <a class="btn gold small" href="#book">Записатись</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="hero-bg" src="brodach-hero.jpg" alt="" fetchpriority="high">
+    <div class="hero-in">
+      <p class="eyebrow">Барбершоп · Львів · з <span id="since">2019</span></p>
+      <h1>Стрижка<br>з <em>характером</em></h1>
+      <p class="lead">Чоловічі стрижки, догляд за бородою та гоління небезпечною бритвою. Без черг: запис на зручний час за хвилину.</p>
+      <div class="cta-row">
+        <a class="btn gold" href="#book">Записатись онлайн</a>
+        <a class="btn line" href="#services">Послуги та ціни</a>
+      </div>
+    </div>
+    <ul class="hero-facts">
+      <li><b id="yearsOn">7 років</b><span>на ринку</span></li>
+      <li><b>4.9</b><span>рейтинг Google</span></li>
+      <li><b>3 000+</b><span>клієнтів</span></li>
+    </ul>
+  </section>
+
+  <section class="section" id="services">
+    <div class="svc">
+      <div class="svc-text">
+        <p class="eyebrow">Прайс</p>
+        <h2>Послуги та ціни</h2>
+        <p class="sub">Ціни вказані від мінімальної. Точну суму майстер називає після короткої консультації, до початку роботи.</p>
+        <div class="price-list" id="priceList"></div>
+        <a class="btn gold" href="#book">Записатись</a>
+      </div>
+      <div class="svc-img"><img src="brodach-cut.jpg" alt="Майстер стриже клієнта ножицями й гребінцем" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section" id="masters">
+    <div class="head"><div><p class="eyebrow">Команда</p><h2>Майстри</h2></div><p class="sub">Кожен має свою спеціалізацію. Оберіть того, до кого хочете.</p></div>
+    <div class="masters" id="mastersGrid"></div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="head"><div><p class="eyebrow">Бродач зсередини</p><h2>Галерея</h2></div><p class="sub">Інтер’єр, інструмент і робота майстрів.</p></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="book-grid">
+      <div class="book-intro">
+        <p class="eyebrow">Запис онлайн</p>
+        <h2>Оберіть час, а решту зробимо ми</h2>
+        <p class="sub">Запис відкриється в Telegram, а для Viber текст скопіюється: його залишиться вставити в чат і надіслати. Підтвердимо запис протягом години в робочий час.</p>
+        <ul class="ticks">
+          <li>Без передоплати</li>
+          <li>Перенести або скасувати запис можна не пізніше ніж за 2 години до візиту</li>
+          <li>Дитячі стрижки з 5 років</li>
+        </ul>
+      </div>
+      <form class="form" id="bookForm" novalidate>
+        <div class="field"><label for="service">Послуга</label><select id="service" name="service"></select></div>
+        <div class="field"><label for="master">Майстер</label><select id="master" name="master"></select></div>
+        <div class="row2">
+          <div class="field"><label for="date">Дата</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label>Час</label><div class="slots" id="slots" role="radiogroup" aria-label="Час"></div></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="name">Ім’я</label><input id="name" name="name" autocomplete="name" placeholder="Андрій" required></div>
+          <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+38 0__ ___ __ __" required></div>
+        </div>
+        <p class="summary" id="summary"></p>
+        <p class="err" id="err" role="alert"></p>
+        <div class="send">
+          <button class="btn gold" type="submit" data-via="tg">Записатись у Telegram</button>
+          <button class="btn line" type="submit" data-via="viber">Viber</button>
+        </div>
+        <a class="callme" href="tel:+380000000000">Або зателефонуйте: +38 (000) 000-00-00</a>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="head"><div><p class="eyebrow">Відгуки</p><h2>Кажуть клієнти</h2></div></div>
+    <div class="reviews">
+      <figure><blockquote>Ходжу до Тараса третій рік. Стрижка тримає форму місяць, а атмосфера як у клубі, де ніхто не поспішає.</blockquote><figcaption><b>Максим К.</b><span>Стрижка + борода</span></figcaption></figure>
+      <figure><blockquote>Привів сина на першу «дорослу» стрижку. Майстер знайшов підхід, дитина задоволена, я теж. Запис у телеграмі дуже зручний.</blockquote><figcaption><b>Олег Д.</b><span>Дитяча стрижка</span></figcaption></figure>
+      <figure><blockquote>Королівське гоління окремий досвід. Гарячий рушник, бритва, догляд. Прийшов на 40 хвилин, вийшов іншою людиною.</blockquote><figcaption><b>Ігор Б.</b><span>Гоління</span></figcaption></figure>
+    </div>
+    <p class="demo-note">Демо-версія: відгуки, рейтинг, цифри та імена майстрів умовні й замінюються на справжні.</p>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <img src="brodach-sign.jpg" alt="Інтер’єр барбершопу з вивіскою" loading="lazy">
+    <div class="ct-card">
+      <p class="eyebrow">Контакти</p>
+      <h2>Чекаємо у Львові</h2>
+      <dl class="info">
+        <dt>Адреса</dt><dd>м. Львів, вул. Прикладна, 1</dd>
+        <dt>Телефон</dt><dd><a href="tel:+380000000000">+38 (000) 000-00-00</a></dd>
+        <dt>Telegram</dt><dd><a href="https://t.me/your_barber" target="_blank" rel="noopener">@your_barber</a></dd>
+        <dt>Instagram</dt><dd><a href="https://instagram.com/your_barber" target="_blank" rel="noopener">@your_barber</a></dd>
+        <dt>Графік</dt><dd>Пн–Сб 10:00–21:00<br>Нд 11:00–19:00</dd>
+      </dl>
+      <a class="btn gold" href="https://maps.google.com/?q=Львів" target="_blank" rel="noopener">Прокласти маршрут</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Бродач. Барбершоп у Львові.</span>
+  <span class="demo">Демо-сайт, зроблений для портфоліо. Фото з Unsplash; дані замінюються на клієнтські.</span>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="brodach.js"></script>
+<a href="index.html" id="back-portfolio" style="position:fixed;left:14px;bottom:14px;z-index:45;padding:9px 15px;border-radius:99px;background:rgba(20,20,20,.88);color:#fff;font:600 13px/1 system-ui,Segoe UI,Arial,sans-serif;text-decoration:none;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 2px 10px rgba(0,0,0,.25)">← Портфоліо</a>
+</body>
+</html>
