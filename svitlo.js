@@ -41,7 +41,7 @@ function renderGrid() {
   const list = PRODUCTS.filter((p) => activeCat === "Усі" || p.cat === activeCat);
   $("#grid").innerHTML = list.map((p) => `
     <article class="card">
-      <div class="card-art" data-open="${p.id}" role="button" tabindex="0" aria-label="Детальніше: ${p.name}">
+      <div class="card-art" data-open="${p.id}" role="button" tabindex="0" aria-label="${p.tag ? p.tag + ". " : ""}Детальніше: ${p.name}">
         ${p.tag ? `<span class="tag">${p.tag}</span>` : ""}${artFor(p)}
       </div>
       <div class="card-body">
@@ -84,8 +84,8 @@ function renderCart() {
   $("#shipText").textContent = s === 0 ? `Безкоштовна доставка від ${fmt(CONFIG.freeShipFrom)}` : left > 0 ? `До безкоштовної доставки залишилось ${fmt(left)}. Інакше доставка за тарифами «Нової пошти».` : "Безкоштовна доставка «Новою поштою» ✓";
   $("#shipBar").style.width = Math.min(100, (s / CONFIG.freeShipFrom) * 100) + "%";
 }
-function openCart() { $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden", "false"); $("#overlay").hidden = false; document.body.style.overflow = "hidden"; }
-function closeCart() { $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden", "true"); $("#overlay").hidden = true; document.body.style.overflow = ""; }
+function openCart() { $("#drawer").classList.add("open"); $("#drawer").inert = false; $("#overlay").hidden = false; document.body.style.overflow = "hidden"; }
+function closeCart() { $("#drawer").classList.remove("open"); $("#drawer").inert = true; $("#overlay").hidden = true; document.body.style.overflow = ""; }
 
 /* ===== Замовлення ===== */
 function orderText(f) {
